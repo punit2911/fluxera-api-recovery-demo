@@ -1,5 +1,7 @@
 # Fluxera API Recovery Demo
 
+![Fluxera API recovery demo banner](docs/fluxera-banner.png)
+
 A live demo of the failure-to-recovery path for API-driven work: observe the work, catch the failure, show what is still safe, recover through an approved path, verify it, and show what it cost.
 
 One support workflow handles a delayed-order refund inquiry. It calls six kinds of API. A controlled, temporary failure hits the notification step, and the demo walks through diagnosis, work continuity, recovery and cost.
