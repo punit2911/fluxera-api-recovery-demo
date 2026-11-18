@@ -1,0 +1,16 @@
+{
+  "name": "fluxera-recovery-demo",
+  "version": "1.0.0",
+  "description": "Live demo of API failure detection, work continuity, safe recovery and cost recovery.",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test --test-concurrency=1 test/*.test.js",
+    "test:evidence": "node scripts/test-evidence.js",
+    "smoke": "node scripts/smoke.js",
+    "record": "node scripts/record-demo.js"
+  }
+}

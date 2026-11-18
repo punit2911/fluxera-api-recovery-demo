@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: fluxera-recovery-demo
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /healthz
+    envVars:
+      - key: RECOVERY_WEBHOOK_SECRET
+        generateValue: true
