@@ -47,7 +47,7 @@ npm run test:evidence   # regenerates docs/TEST_EVIDENCE.md
 
 The default run uses the first one. Recovery can also be held for manual approval with the checkbox in the header.
 
-## What is real and what is not
+## What is real and what is not?
 
 - The execution tree, attempts, durations, statuses and costs are recorded by the tracer in `src/tracer.js` as the workflow runs. Nothing on the page is a canned value.
 - The tracer is a local stand-in shaped like the Fluxera Node SDK (workflow, agent, memory, step, tool, track, checkpoint). It is **not connected to a Fluxera tenant**, and the page says so. To use the real SDK, replace the calls in `src/tracer.js` and keep the same call sites in `src/integration.js`.
